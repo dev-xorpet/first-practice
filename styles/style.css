@@ -1,0 +1,81 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwki5MoI-tXjLPYnCI3qcCuDTND_huveSssk14Z8DZ0ixbc4btJwfQesZM&s=10);
+    height: 100vh;
+    background-size: auto;
+    background-attachment: fixed;
+}
+#siktir{
+    border-style: solid;
+    border-right-color: blue;
+    border-width: 5px;
+    border-bottom-color: hotpink;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  border: solid;
+}
+td {
+  border: solid;
+  text-align: center;
+}
+div {
+  background-color: brown;
+}
+span {
+  background-color: aquamarine;
+}
+.big-text {
+  font-size: 50px;
+}
+p {
+  color: rgb(0, 102, 139);
+  text-shadow: 10px 10px 10px;
+  line-height: 50px;
+  direction: ltr;
+  text-align: center;
+  text-decoration: overline red solid;
+  letter-spacing: 10px;
+  word-break: break-all;
+  text-indent: 10px;
+}
+
+#link-stile {
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  font-style: oblique;
+  letter-spacing: 5px;
+  word-break: normal;
+  text-indent: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  background-color: darkseagreen;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+a:visited {
+  color: rgb(74, 0, 103);
+}
+a:hover {
+  color: black;
+  background-color: rgb(255, 147, 147);
+}
+a:active {
+  color: brown;
+  background-color: fuchsia;
+}
+a:after {
+  color: darkgreen;
+}
+img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    opacity: blur(5px);
+}
