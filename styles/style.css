@@ -100,15 +100,63 @@ select {
 }
 input[type="submit"] {
   color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
   margin: 10px;
+  transition: 2s;
+  transition-timing-function: ease-in-out;
+  width: 100px;
+  height: 25px;
   background-color: chocolate;
   border-radius: 5px;
   border: none;
-  box-shadow: rgb(11, 30, 51) 0px 20px 30px -10px !important;
+  box-shadow: rgb(4, 113, 48) 0px 20px 30px -10px !important;
 }
 input[type="submit"]:hover {
-    background-color: chartreuse;
+  background-color: chartreuse;
+  transition: 500ms;
+  width: 150px;
+  height: 50px;
 }
 input[type="submit"]:active {
-    background-color: firebrick;
+  background-color: firebrick;
+  transition: 0s;
+}
+input[type="reset"] {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  margin: 10px;
+  transition: 2s;
+  transition-timing-function: ease-in-out;
+  width: 100px;
+  height: 25px;
+  background-color: chocolate;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgb(113, 4, 4) 0px 20px 30px -10px !important;
+}
+input[type="reset"]:hover {
+  background-color: rgb(255, 0, 0);
+  transition: 500ms;
+  width: 150px;
+  height: 50px;
+}
+input[type="reset"]:active {
+  background-color: firebrick;
+  transition: 0s;
+}
+#dokme {
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  transition: 2s;
+}
+#dokme:hover {
+  width: 250px;
+  height: 150px;
+  background-color: gray;
 }
