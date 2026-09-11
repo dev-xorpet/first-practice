@@ -72,6 +72,8 @@ a:after {
   color: darkgreen;
 }
 img {
+  position: sticky;
+  top: 10px;
   width: 50%;
   height: auto;
   border-radius: 10px;
@@ -136,7 +138,8 @@ input[type="reset"]:hover {
   background-color: rgb(255, 0, 0);
   transition:
     height 1000ms linear 500ms,
-    width 500ms linear 500ms , transform 1000ms linear 500ms;
+    width 500ms linear 500ms,
+    transform 1000ms linear 500ms;
   transform: translateY(5px);
   transition-delay: 200ms;
   width: 150px;
@@ -166,8 +169,8 @@ input[type="reset"]:active {
   background-color: none;
   width: 110px;
   height: 60px;
-  background-color: green;
   text-align: center;
+  background-color: green;
   border: none;
   border-radius: 10px;
   align-content: center;
@@ -175,7 +178,7 @@ input[type="reset"]:active {
 .fut {
   background-color: crimson;
   width: 105px;
-  height: 55px;  
+  height: 55px;
   border: none;
   border-radius: 10px;
 }
