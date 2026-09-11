@@ -21,9 +21,6 @@ td {
   border: solid;
   text-align: center;
 }
-div {
-  background-color: brown;
-}
 span {
   background-color: aquamarine;
 }
@@ -103,8 +100,6 @@ input[type="submit"] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   margin: 10px;
-  transition: 2s;
-  transition-timing-function: ease-in-out;
   width: 100px;
   height: 25px;
   background-color: chocolate;
@@ -114,12 +109,15 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: chartreuse;
-  transition: 500ms;
+  transition:
+    height 1000ms linear 500ms,
+    width 500ms linear 500ms;
+  transition-delay: 200ms;
   width: 150px;
   height: 50px;
 }
 input[type="submit"]:active {
-  background-color: firebrick;
+  background-color: rgb(166, 146, 146);
   transition: 0s;
 }
 input[type="reset"] {
@@ -127,8 +125,6 @@ input[type="reset"] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   margin: 10px;
-  transition: 2s;
-  transition-timing-function: ease-in-out;
   width: 100px;
   height: 25px;
   background-color: chocolate;
@@ -138,13 +134,18 @@ input[type="reset"] {
 }
 input[type="reset"]:hover {
   background-color: rgb(255, 0, 0);
-  transition: 500ms;
+  transition:
+    height 1000ms linear 500ms,
+    width 500ms linear 500ms , transform 1000ms linear 500ms;
+  transform: translateY(5px);
+  transition-delay: 200ms;
   width: 150px;
   height: 50px;
 }
 input[type="reset"]:active {
-  background-color: firebrick;
-  transition: 0s;
+  background-color: rgb(186, 167, 167);
+  transition: 200ms;
+  transform: scale(1.1);
 }
 #dokme {
   width: 150px;
@@ -153,10 +154,43 @@ input[type="reset"]:active {
   text-align: center;
   border: none;
   border-radius: 10px;
-  transition: 2s;
+  transition: 500ms;
+  transition-delay: 200ms;
 }
 #dokme:hover {
-  width: 250px;
+  width: 200px;
   height: 150px;
   background-color: gray;
+}
+.fub {
+  background-color: none;
+  width: 120px;
+  height: 70px;
+  background-color: black;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  align-content: center;
+}
+.fut {
+  width: 100px;
+  height: 50px;  
+}
+.fub:hover {
+  background-color: green;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-delay: 50ms;
+  animation-direction: alternate-reverse;
+}
+@keyframes move {
+  0% {
+    width: 100px;
+    height: 50px;
+  }
+  100% {
+    width: 120px;
+    height: 70px;
+  }
 }
